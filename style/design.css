@@ -1,11 +1,13 @@
 body{
+    font-family: 'Segoe UI';
     background-color: rgb(235, 233, 233);
+    margin: 0px;
 }
 #nav-side-panel{
     position: absolute;
     top:0;
     left:-50%;
-    background-color: lightblue;
+    background-color: royalblue;
     height:100vh;
     width: 20%;
     z-index: 1;
@@ -13,9 +15,10 @@ body{
     text-transform: capitalize;
     color:white;
 }
-#nav-side-panel>span{
+#nav-side-panel span{
     display:block;
-    text-align: center;
+    text-align: left;
+    padding-left: 50px;
 }
 #logo{
     color:darkblue;
@@ -28,13 +31,10 @@ body{
     cursor: pointer;
     border-bottom: 1px solid skyblue;
 }
-.listing-panel>ul{
-    list-style-type: none;
-}
 #main-panel{
     width:100%;
     height: 100%;
-    transition: 3s all;
+    transition: 0.3s all;
 }
 nav{
     height:8vh;
@@ -42,33 +42,54 @@ nav{
     box-shadow: 5px 5px 7px grey;
     background-color: white;
     display: flex;
+    align-items: baseline;
     justify-content: space-between;
 }
-nav>span>input{
-    width:30rem;
+nav span{
+    font-size: 20px;
+    padding: 10px;
+}
+nav span input{
+    width:50rem;
+}
+nav span input:focus{
+    outline: 1px solid green;
 }
 .icon{
-    font-size: 30px;
+    background-color: skyblue;
+    color:black;
+    font-weight: 400;
+    border: none;
+    outline: none;
+    padding: 3px;
+}
+.main{
+    overflow: auto;
 }
 .listing-panel{
-    min-height: 40vh;
-    width:100%;
-    overflow-x:auto;
+    min-height: 25vh;
+    padding-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    margin:0px 20px 20px 20px;
+    justify-content: space-between;
 }
-.listing-panel>ul>li{
-    float:left;
-    margin-right: 10%;
-    font-size: 25px;
+.list img{
+    height: 90px;
+    width:90px;
 }
 .list{
+    height: 130px;
+    width: 110px;
     background-color: white;
-    margin-bottom: 5px ;
-    margin-top: 10px;
-    border-radius: 10px;
-    padding:10px;
-    font-size: 15px;
-    text-align: center;
+    border-radius: 20px;
+    padding: 20px;
     position: relative;
+}
+.list p{
+    font-size: 20px;
+    text-align: center;
+    text-transform: capitalize;
 }
 .count{
     position: absolute;
@@ -92,40 +113,34 @@ nav>span>input{
 }
 .hide{
     position: absolute;
-    right:0px;
-    top:0px;
+    top: -10px;
+    right: 0;
     color:white;
-    height:25px;
-    width: 25px;
-    font-weight: 500;
-    text-align: center;
+    padding: 10px;    
+    font-weight: 600;
     border-radius: 50%;
-}
-.listing-panel img{
-    height: 80px;
-    width:80px;
 }
 #details{
     clear: both;
-    display: block;
+    width: 97%;   
+    margin:0px 20px 0px 20px;
     text-align: center;
     text-transform: capitalize;
-    display:flex;
-    justify-content: space-evenly;
-    overflow-x: auto;
+    overflow: auto;
 }
 #details td, #details th{
     padding:10px;
-    background:white;
-    border-radius: 10px;
+    background:#ffffff;
+}
+#details tr{
     border: 5px solid  rgb(235, 233, 233);
-    margin-bottom: 10px;
+    border-radius: 10px;
 }
 .remarks{
-    background-color:red ;
+    background-color:crimson ;
     padding: 5px;
     color: white;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 .order{
     background-color: blue;
@@ -139,19 +154,20 @@ nav>span>input{
         text-align: center;
     }
     nav>span>input{
-        width:100px;
+        width:20rem;
     }
-    table{
-        max-width:1024px;
+    #details{
+        max-width:100px;
         overflow-x: auto;
     }
     #nav-side-panel {
         position: absolute;
         top: 0;
         left: -80%;
-        background-color: lightblue;
+        background-color: royalblue;
         height: 100vh;
-        width: 60%;
+        width: 20%;
+        
         z-index: 1;
         transition: 0.3s left;
         text-transform: capitalize;
