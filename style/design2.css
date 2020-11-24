@@ -1,0 +1,97 @@
+
+/* following css is for example2.html */
+.add-products{
+    background-color: blue;
+    padding:10px;
+    text-transform: capitalize;
+    color: white;
+    float: right;
+    font-size:18px;
+    margin:50px 0px 0px 0px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+/* for the add product button */
+.products{
+    clear: both;
+    height:10vh;
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+/* for listed products */
+.products h2{
+    text-transform: capitalize;
+    display: inline;
+}
+/* for heading of the products */
+.products button{
+    border-radius: 5px;
+    font-size: large;
+    padding: 5px;
+    text-align: center;
+    color:  #9a97ff;
+    background-color: white;
+    border: 1px solid #dddddd;
+}
+/* for the buttons inside the products class */
+.product-option{
+    display: block;
+    padding-right:20px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+/* this is for select tag */
+
+/* this is for product listing in example2.html */
+/* table */
+#product-details{   
+    width: 100%;           
+    text-transform: capitalize;
+}
+/* table */
+
+/* table cell */
+#product-details td,#product-details th{ 
+    text-align: left;
+    border-bottom: 10px solid #f2f2f2;
+    padding:10px;
+    background:#ffffff;
+}
+/* table cell */
+
+#product-details td:first-of-type{
+    border-left: 1px solid black;
+}
+#product-details td:last-of-type{
+    border-right: 1px solid black;
+}
+/* this style is for border at each start and end of row */
+
+/* row */
+#product-details tr{
+    margin-bottom: 10px;
+}
+
+/* for edit and delete button */
+.edit,.delete{
+    border-radius: 5px;
+    color: white;
+    outline: none;
+    border: none;
+    padding:10px;
+    text-transform: capitalize;
+}
+.edit{
+    background-color: #28a745;
+    margin-right: 5px;
+}
+/* for edit button */
+.delete{
+    background-color: #dc3545;
+}
+/* for delete button */

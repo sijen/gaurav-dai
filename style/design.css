@@ -1,71 +1,89 @@
 body{
     font-family: 'Segoe UI';
-    background-color: rgb(235, 233, 233);
+    background-color: #f2f2f2;
     margin: 0px;
 }
+/* body is for whole body */
 #nav-side-panel{
     position: absolute;
     top:0;
     left:-50%;
-    background-color: royalblue;
     height:100vh;
     width: 20%;
     z-index: 1;
     transition: 0.3s left;
     text-transform: capitalize;
+    background-color: royalblue;
     color:white;
 }
-#nav-side-panel span{
+/* #nav-side-panel is for side navigation  */
+#nav-side-panel a,#logo{
+    text-decoration: none;
+    color: white;
     display:block;
     text-align: left;
     padding-left: 50px;
 }
+/* #nav-side-panel a is for every links in side navigation */
 #logo{
-    color:darkblue;
+    font-size: x-large;
+    color:#3c447c;
 }
+/* this is for logo in side navigation */
 .link{
-    padding:10px;
+    padding:20px;
     border-bottom: 1px solid white;
 }
+/* .link is for every links in side navigation */
 .link:hover{
     cursor: pointer;
     border-bottom: 1px solid skyblue;
 }
+/* .link is for every links in side navigation */
 #main-panel{
     width:100%;
     height: 100%;
     transition: 0.3s all;
 }
+/* #main-panel is required for the side-nav in javascript */
 nav{
-    height:8vh;
+    height:10vh;
     width: 100%;
     box-shadow: 5px 5px 7px grey;
     background-color: white;
     display: flex;
-    align-items: baseline;
     justify-content: space-between;
 }
-nav span{
-    font-size: 20px;
-    padding: 10px;
-}
-nav span input{
-    width:50rem;
-}
-nav span input:focus{
-    outline: 1px solid green;
-}
-.icon{
-    background-color: skyblue;
-    color:black;
-    font-weight: 400;
-    border: none;
+/* nav is for navigation bar */
+nav>span{
+    height: 30px;
+    font-size: 30px;
+    color: grey;
     outline: none;
-    padding: 3px;
+    border: none;
+    margin: 5px 10px 0px 10px;
 }
-.main{
-    overflow: auto;
+/* nav>span is for every items in navigation bar */
+nav>span>input{
+    height: 30px;
+    width:50rem;
+    box-shadow: 5px 5px 10px 0px grey ;
 }
+nav>span>input:focus{
+    outline: 2px solid green;
+}
+/* nav>span>input & nav>span>input:focus are for input inside navigation bar */
+.icon{
+    outline: none;
+    border: none;
+    background-color: skyblue;
+    margin-left: 10px;
+    color:black;
+    font-size: 30px;
+    padding: 0px 5px 0px 5px;
+}
+/* .icon is for serach bar in navigation bar */
+
 .listing-panel{
     min-height: 25vh;
     padding-top: 10px;
@@ -101,6 +119,7 @@ nav span input:focus{
     top:-10px;
     right:-10px;
 }
+
 .side-menu,.hide{
     cursor: pointer;
     transition: 0.3s transform;
@@ -120,13 +139,13 @@ nav span input:focus{
     font-weight: 600;
     border-radius: 50%;
 }
+/* .side-menu is for the style of side navigation,.hide is for side navigation hide function */
 #details{
     clear: both;
     width: 97%;   
     margin:0px 20px 0px 20px;
     text-align: center;
     text-transform: capitalize;
-    overflow: auto;
 }
 #details td, #details th{
     padding:10px;
@@ -173,4 +192,10 @@ nav span input:focus{
         text-transform: capitalize;
         color: white;
     }
+}
+
+
+.main{
+    width: auto;
+    margin: 0px 40px 0px 40px;
 }

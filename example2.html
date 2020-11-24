@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/design.css"><!-- this is for both example.html & example2.html -->
+    <link rel="stylesheet" href="./style/design2.css"><!-- this is only for example2.html -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+    <script src="./script/logic.js"></script>
+</head>
+
+<body>
+    <div class="pallet" id="main-panel">
+        <!-- main panel for the sizing of the screen when side navigation is active -->
+
+        
+        <!-- side navigation -->
+        <div id="nav-side-panel">
+            <p class="hide" onclick="side_hide()">x</p>
+            <span id="logo">s maharjan</span>
+            <a href="#" class="link"> Home</a>
+            <a href="#" class="link"> order & invoice</a>
+            <a href="#" class="link"> manage users</a>
+            <a href="#" class="link"> sales</a>
+            <a href="#" class="link"> inventory</a>
+            <a href="#" class="link"> delivery man</a>
+            <a href="#" class="link"> messege</a>
+            <a href="#" class="link"> settings</a>
+            <a href="#" class="link"> history</a>
+            <a href="#" class="link"> support</a>
+        </div>
+        <!-- side navigation -->
+
+        <!-- main navigation panel -->
+        <nav>
+            <span class="side-menu" onclick="side_display()"><i class="fas fa-bars"></i></span>
+            <span><input type="text">
+                <button class="icon"><i class="fas fa-search"></i></button>
+            </span>
+            <span><i class="far fa-envelope"></i></span>
+            <span><i class="far fa-bell"></i></span>
+            <span><i class="far fa-user-circle"></i></span>
+        </nav>
+        <!-- main navigation panel -->
+
+        <!-- main class for the items below navigation -->
+        <div class="main">
+            <!-- button -->
+            <button class="add-products">
+                add products
+            </button>
+            <!-- button -->
+
+            <!-- list of products  -->
+            <div class="products">
+                <h2>categories</h2>
+                <button onclick=""><i class="fas fa-chevron-circle-left"></i></button>
+                <button onclick="">liquor</button>
+                <button onclick="">meat</button>
+                <button onclick="">fruit</button>
+                <button onclick="">grocery</button>
+                <button onclick="">daily products</button>
+                <button onclick="">baby care</button>
+                <button onclick="">personal care</button>
+                <button onclick=""><i class="fas fa-chevron-circle-right"></i></button>
+            </div>
+            <!-- list of products -->
+            <select class="product-option">
+                <option>all</option>
+            </select>
+            
+            <!-- table of the details of items -->
+            <table id="product-details" cellspacing="0px">
+                <tr>
+                    <th>sn</th>
+                    <th>product name</th>
+                    <th>stock</th>
+                    <th>rate</th>
+                    <th>discount</th>
+                    <th>description</th>
+                    <th>images</th>
+                    <th>edit</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>tuborg beer</td>
+                    <td>20</td>
+                    <td>350</td>
+                    <td>5%</td>
+                    <td>Lorem ipsum dolor sit amet.</td>
+                    <td>as4f53g5g</td>
+                    <td><button class="edit">edit</button><button class="delete">delete</button></td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>tuborg beer</td>
+                    <td>20</td>
+                    <td>350</td>
+                    <td>5%</td>
+                    <td>Lorem ipsum dolor sit amet.</td>
+                    <td>as4f53g5g</td>
+                    <td><button class="edit">edit</button><button class="delete">delete</button></td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>tuborg beer</td>
+                    <td>20</td>
+                    <td>350</td>
+                    <td>5%</td>
+                    <td>Lorem ipsum dolor sit amet.</td>
+                    <td>as4f53g5g</td>
+                    <td><button class="edit">edit</button><button class="delete">delete</button></td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>tuborg beer</td>
+                    <td>20</td>
+                    <td>350</td>
+                    <td>5%</td>
+                    <td>Lorem ipsum dolor sit amet.</td>
+                    <td>as4f53g5g</td>
+                    <td><button class="edit">edit</button><button class="delete">delete</button></td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>tuborg beer</td>
+                    <td>20</td>
+                    <td>350</td>
+                    <td>5%</td>
+                    <td>Lorem ipsum dolor sit amet.</td>
+                    <td>as4f53g5g</td>
+                    <td><button class="edit">edit</button><button class="delete">delete</button></td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>tuborg beer</td>
+                    <td>20</td>
+                    <td>350</td>
+                    <td>5%</td>
+                    <td>Lorem ipsum dolor sit amet.</td>
+                    <td>as4f53g5g</td>
+                    <td><button class="edit">edit</button><button class="delete">delete</button></td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>tuborg beer</td>
+                    <td>20</td>
+                    <td>350</td>
+                    <td>5%</td>
+                    <td>Lorem ipsum dolor sit amet.</td>
+                    <td>as4f53g5g</td>
+                    <td><button class="edit">edit</button><button class="delete">delete</button></td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>tuborg beer</td>
+                    <td>20</td>
+                    <td>350</td>
+                    <td>5%</td>
+                    <td>Lorem ipsum dolor sit amet.</td>
+                    <td>as4f53g5g</td>
+                    <td><button class="edit">edit</button><button class="delete">delete</button></td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>tuborg beer</td>
+                    <td>20</td>
+                    <td>350</td>
+                    <td>5%</td>
+                    <td>Lorem ipsum dolor sit amet.</td>
+                    <td>as4f53g5g</td>
+                    <td><button class="edit">edit</button><button class="delete">delete</button></td>
+                </tr>
+            </table>
+            <!-- table of the details of items -->
+        </div>
+        <!-- main class for the items below navigation -->
+    </div>
+    <!-- main panel for the sizing of the screen when side navigation is active -->
+</body>
+
+</html>
